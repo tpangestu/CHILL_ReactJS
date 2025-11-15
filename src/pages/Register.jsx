@@ -34,7 +34,7 @@ const Register = () => {
       <div className="fixed inset-0 z-0">
         {/* Gambar background untuk halaman registrasi */}
         <img
-          src="/src/assets/bg-daftar.jpg"
+          src="/assets/bg-daftar.jpg"
           alt=""
           className="w-full h-full object-cover"
         />

@@ -36,7 +36,7 @@ const Login = () => {
       <div className="fixed inset-0 z-0">
         {/* Gambar background kursi teater */}
         <img
-          src="/src/assets/bg-login.jpg"
+          src="/assets/bg-login.jpg"
           alt=""
           className="w-full h-full object-cover"
         />
