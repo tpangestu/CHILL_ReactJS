@@ -13,7 +13,7 @@ import Watch from './pages/Watch';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/CHILL_ReactJS">
       <Routes>
         {/* Auth Routes (without navbar) */}
         <Route path="/" element={<Login />} />
