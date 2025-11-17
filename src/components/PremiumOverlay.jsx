@@ -13,7 +13,7 @@ const PremiumOverlay = ({ onClose }) => {
    * Handler untuk navigasi ke halaman subscription
    */
   const handlePremiumClick = () => {
-    navigate('/subscription');
+    navigate("/subscription");
   };
   return (
     <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-50 flex items-center justify-center">
@@ -30,13 +30,18 @@ const PremiumOverlay = ({ onClose }) => {
         {/* Icon bintang premium */}
         <div className="flex justify-center mb-4">
           <div className="bg-yellow-500 text-black p-4 rounded-full">
-            <Star className="w-8 h-8 fill-current" />
+            <span className="text-6xl fill-current">
+              <i class="ri-star-fill"> </i>
+            </span>
           </div>
         </div>
 
         {/* Title */}
         <h2 className="text-2xl md:text-3xl font-bold mb-2">
-          Layanan Premium⭐
+          Layanan Premium{" "}
+          <span className="text-yellow-400">
+            <i class="ri-star-fill"> </i>{" "}
+          </span>
         </h2>
         <p className="text-gray-300 mb-5 text-sm md:text-base">
           Tingkatkan paket anda untuk dapat menonton video ini.
@@ -44,7 +49,9 @@ const PremiumOverlay = ({ onClose }) => {
 
         {/* Daftar benefit premium dalam grid 2 kolom */}
         <div className="bg-gray-900/80 backdrop-blur-sm rounded-xl p-4 md:p-5 mb-5">
-          <h3 className="text-lg md:text-xl font-bold mb-4">Kenapa Harus Berlangganan?</h3>
+          <h3 className="text-lg md:text-xl font-bold mb-4">
+            Kenapa Harus Berlangganan?
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-left">
             <div className="flex items-start gap-2">
@@ -52,7 +59,9 @@ const PremiumOverlay = ({ onClose }) => {
                 <Download className="w-4 h-4" />
               </div>
               <div>
-                <p className="font-semibold text-sm md:text-base">Download Konten Pilihan</p>
+                <p className="font-semibold text-sm md:text-base">
+                  Download Konten Pilihan
+                </p>
               </div>
             </div>
 
@@ -61,7 +70,9 @@ const PremiumOverlay = ({ onClose }) => {
                 <Zap className="w-4 h-4" />
               </div>
               <div>
-                <p className="font-semibold text-sm md:text-base">Tidak Ada Iklan</p>
+                <p className="font-semibold text-sm md:text-base">
+                  Tidak Ada Iklan
+                </p>
               </div>
             </div>
 
@@ -70,7 +81,9 @@ const PremiumOverlay = ({ onClose }) => {
                 <Check className="w-4 h-4" />
               </div>
               <div>
-                <p className="font-semibold text-sm md:text-base">Tonton Semua Konten</p>
+                <p className="font-semibold text-sm md:text-base">
+                  Tonton Semua Konten
+                </p>
               </div>
             </div>
 
@@ -101,7 +114,9 @@ const PremiumOverlay = ({ onClose }) => {
                 <Subtitles className="w-4 h-4" />
               </div>
               <div>
-                <p className="font-semibold text-sm md:text-base">Subtitle Untuk Konten Pilihan</p>
+                <p className="font-semibold text-sm md:text-base">
+                  Subtitle Untuk Konten Pilihan
+                </p>
               </div>
             </div>
           </div>

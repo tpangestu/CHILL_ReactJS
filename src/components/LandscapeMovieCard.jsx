@@ -70,7 +70,7 @@ const LandscapeMovieCard = ({
           )}
 
           {/* Judul di kiri bawah */}
-          <div className="absolute bottom-4 md:bottom-2 left-2 md:left-2 text-white font-semibold text-3xl md:text-xl drop-shadow-lg">
+          <div className="absolute bottom-4 md:bottom-2 left-2 md:left-2 text-white font-semibold text-2xl md:text-xl drop-shadow-lg">
             {title}
           </div>
 
@@ -78,7 +78,7 @@ const LandscapeMovieCard = ({
           {rating && (
             <div className="absolute text-yellow-400 text-sm md:text-base bottom-4 md:bottom-2 right-2 flex items-center gap-1 bg-black/60 px-2 py-1 rounded">
              <i class="ri-star-fill"></i>
-              <span className="text-white text-xl md:text-xs font-medium">{`${rating}/10`}</span>
+              <span className="text-white text-sm md:text-xs font-medium">{`${rating}/10`}</span>
             </div>
           )}
 

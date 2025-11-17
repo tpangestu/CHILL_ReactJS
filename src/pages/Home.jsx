@@ -56,7 +56,7 @@ const Home = () => {
             </h1>
 
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-yellow-400 text-sm md:text-base">★ {movie.rating}</span>
+              <span className="text-yellow-400 text-sm md:text-base"><i class="ri-star-fill"> </i> {movie.rating}</span>
               <span className="text-gray-300 text-sm md:text-base">{movie.genre}</span>
               <span className="text-gray-300 text-sm md:text-base">{movie.duration}</span>
             </div>
